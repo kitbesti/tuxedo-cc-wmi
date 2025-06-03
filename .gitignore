@@ -13,3 +13,4 @@
 *.rpm
 rpm
 deb/tuxedo-cc-wmi-*
+*.o.d
