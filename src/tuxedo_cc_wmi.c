@@ -320,7 +320,7 @@ static int __init tuxedo_cc_wmi_init(void)
         pr_err("Failed to add cdev\n");
         unregister_chrdev_region(tuxedo_cc_wmi_device_handle, 1);
     }
-    tuxedo_cc_wmi_device_class = class_create(THIS_MODULE, "tuxedo_cc_wmi");
+    tuxedo_cc_wmi_device_class = class_create("tuxedo_cc_wmi");
     device_create(tuxedo_cc_wmi_device_class, NULL, tuxedo_cc_wmi_device_handle, NULL, "tuxedo_cc_wmi");
     pr_debug("Module init successful\n");
     
